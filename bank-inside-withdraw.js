@@ -3,6 +3,11 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
     const newWithdrawString = withdrawField.value;
     const newWithdraw = parseFloat(newWithdrawString);
 
+    if(isNaN(newWithdraw)){
+        alert('Please provide a valid number')
+        return;
+    }
+
     const previousWithdraw = document.getElementById('withdraw-total');
     const previousWithdrawString = previousWithdraw.innerText;
     const previousTotalWithdraw = parseFloat(previousWithdrawString);

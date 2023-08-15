@@ -3,6 +3,11 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
     const newDepositString = depositField.value;
     const newDeposit = parseFloat(newDepositString )
 
+    if(isNaN(newDeposit)){
+        alert('Please provide a valid number')
+        return;
+    }
+
     const depositTotalElement = document.getElementById('deposit-total')
     const previousDepositTotalString = depositTotalElement.innerText;
     const previousDeposit = parseFloat(previousDepositTotalString)
