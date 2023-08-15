@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-7">Let's get some <span
+                class="font-semibold text-emerald-400">Moooooney</span> !!!</h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+                <div class="bg-green-500 p-8 rounded text-white">
+                    <h2 class="text-2xl">Deposit</h2>
+                    <h3 class="text-5xl">$<span id="deposit-total" >00</span></h3>
+                </div>
+                <div class="bg-red-500 p-8 rounded text-white">
+                    <h2 class="text-2xl">Withdraw</h2>
+                    <h3 class="text-5xl">$<span id="withdraw-total">00</span> </h3>
+                </div>
+                <div class="bg-blue-500 p-8 rounded text-white">
+                    <h2 class="text-2xl">Total Balance</h2>
+                    <h3 class="text-5xl">$<span id="blance-total">1240</span> </h3>
+                </div>
+            </div>
+        </section>
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto spa">
+                <div class="bg-yellow-500 p-8 rounded space-y-3">
+                    <h2 class="text-2xl font-semibold text-white">Please Deposit</h2>
+                    <input class="rounded pl-3" type="text" name="" id="deposit-field" placeholder="$ Please Enter Amount">
+                    <button id="btn-deposit"
+                        class="block px-5 py-2 bg-emerald-500 hover:bg-emerald-600 p-3 rounded-lg font-semibold text-white">Deposit</button>
+                </div>
+                <div class="bg-lime-500 p-8 rounded space-y-3">
+                    <h2 class="text-2xl font-semibold text-white">Please Withdraw</h2>
+                    <input class="rounded pl-3" type="text" name="" id="withdraw-field" placeholder="$ Please Enter Amount">
+                    <button id="btn-withdraw"
+                        class="block bg-emerald-500 hover:bg-emerald-600 px-5 py-2 rounded-lg font-semibold text-white">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./bank-inside-deposit.js"></script>
+    <script src="./bank-inside-withdraw.js"></script>
+</body>
+
+</html>
